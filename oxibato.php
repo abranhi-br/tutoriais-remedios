@@ -40,7 +40,7 @@
 <p>Todos os detalhes estão nesta página: <a href="https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/controlados/importacao">https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/controlados/importacao</a></p>
 
 <h2 id="comprando">Comprando com seu próprio dinheiro</h2>
-<p>O preço gira em torno de R$ 3 mil por caixa. Para 1 mês de tratamento, são necessárias 2 ou 3 caixas, dependendo da dose que o paciente tomar. Os preços já incluem o frete, dando um custo médio de R$ 6-7 a 10 mil reais por mês de tratamento.</p>
+<p>O preço gira em torno de R$ 7 mil por caixa. Para 1 mês de tratamento, são necessárias 2 ou 3 caixas, dependendo da dose que o paciente tomar. Os preços já incluem o frete, dando um custo médio de R$ 14 a 21 mil reais por mês de tratamento.</p>
 <p>Entre em contato com uma importadora (a única que conhecemos que trabalha com o oxibato é a <a href="https://www.acessomedicamentos.com.br/">Acesso Medicamentos</a>) e faça a compra. Para fazer a compra, a importadora irá pedir a autorização da Anvisa e a prescrição médica. Você irá pagar e a importadora entregará na sua casa o medicamento por volta de 2 a 3 semanas.</p>
 
 <h2 id="processo">Não pode pagar pelo remédio? Como processar o SUS ou o seu plano de saúde para pagar pelo remédio para você</h2>
