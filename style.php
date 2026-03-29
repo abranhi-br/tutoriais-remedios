@@ -1,0 +1,212 @@
+<style>
+/* ─── Variables ─────────────────────────────────────────────── */
+:root {
+  --primary:       #1a5fa0;
+  --primary-dark:  #134a7e;
+  --primary-light: #2980d4;
+  --accent:        #27a891;
+  --bg:            #f4f7fb;
+  --surface:       #ffffff;
+  --text:          #1e2d3d;
+  --text-muted:    #566474;
+  --border:        #d8e2ed;
+  --link:          #1a6db5;
+  --link-hover:    #134a7e;
+}
+
+/* ─── Reset ──────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ─── Base ───────────────────────────────────────────────────── */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+               'Helvetica Neue', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.75;
+  font-size: 17px;
+}
+
+/* ─── Site Header ────────────────────────────────────────────── */
+.site-header {
+  background: var(--primary);
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, #2070b8 100%);
+  box-shadow: 0 2px 8px rgba(0,0,0,.18);
+}
+
+.site-header-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: .9rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.site-logo {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: .05em;
+  color: #ffffff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-logo:hover { color: #cde5ff; }
+
+.site-header-tagline {
+  font-size: .85rem;
+  color: rgba(255,255,255,.75);
+  line-height: 1.4;
+}
+
+/* ─── Layout ─────────────────────────────────────────────────── */
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+/* ─── Headings ───────────────────────────────────────────────── */
+h1 {
+  font-size: clamp(1.35rem, 3vw, 1.9rem);
+  font-weight: 700;
+  color: var(--primary-dark);
+  line-height: 1.3;
+  margin-bottom: 1.75rem;
+  padding-bottom: .75rem;
+  border-bottom: 3px solid var(--accent);
+}
+
+/* Section headings that have an id anchor (content pages) */
+h2[id] {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-top: 2.5rem;
+  margin-bottom: .85rem;
+  padding-left: .85rem;
+  border-left: 4px solid var(--accent);
+  line-height: 1.35;
+}
+
+/* Index-page card headings (contain a link, no id) */
+h2:not([id]) {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: .75rem;
+  margin-bottom: 0;
+  border: none;
+  padding: 0;
+}
+
+h2:not([id]) a {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background .12s, border-left-color .12s, box-shadow .12s;
+  box-shadow: 0 1px 3px rgba(0,0,0,.05);
+}
+
+h2:not([id]) a::after {
+  content: '→';
+  margin-left: auto;
+  font-size: 1rem;
+  opacity: .5;
+  transition: transform .12s, opacity .12s;
+}
+
+h2:not([id]) a:hover {
+  background: #e8f3ff;
+  border-left-color: var(--primary);
+  box-shadow: 0 2px 8px rgba(26,95,160,.12);
+}
+
+h2:not([id]) a:hover::after {
+  transform: translateX(4px);
+  opacity: .85;
+}
+
+/* ─── Body Copy ──────────────────────────────────────────────── */
+p { margin-bottom: 1rem; }
+
+ul, ol {
+  padding-left: 1.6rem;
+  margin-bottom: 1.25rem;
+}
+
+li { margin-bottom: .45rem; }
+
+strong { color: var(--primary-dark); font-weight: 700; }
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+a:hover { color: var(--link-hover); }
+
+/* Table of contents list (first ul on oxibato page) */
+h1 + p + ul,
+h1 + ul {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.1rem 1.4rem 1.1rem 2.4rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+}
+
+/* ─── Footer ─────────────────────────────────────────────────── */
+.site-footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  margin-top: 3rem;
+}
+
+.site-footer-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1.4rem 1.5rem;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--primary-light);
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: 600;
+  margin-bottom: .9rem;
+  transition: color .12s;
+}
+
+.back-link:hover { color: var(--primary-dark); }
+
+.disclaimer {
+  font-size: .82rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  border-top: 1px solid var(--border);
+  padding-top: .8rem;
+  margin-top: .1rem;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .container { padding: 1.5rem 1rem; }
+  .site-header-inner { padding: .75rem 1rem; }
+  h2:not([id]) a { padding: .8rem 1rem; font-size: 1rem; }
+}
+</style>
